@@ -1,0 +1,28 @@
+.jumbotron {
+    background-color: black;
+    !important;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.subtitle {
+    color:white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: "smcp", "zero";
+}
+
+li {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: "smcp", "zero";
+}
+
+.form-control {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: "smcp", "zero";
+}
+
+.item {
+
+}
