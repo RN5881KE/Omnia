@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d7fbe2f1685a8b48364d008f5f27d859",
+    "packages": [
+        {
+            "name": "semantics3/semantics3-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Semantics3/semantics3-php.git",
+                "reference": "eed7dab206254e1077dd5038b9d173bba1a1b5db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Semantics3/semantics3-php/zipball/eed7dab206254e1077dd5038b9d173bba1a1b5db",
+                "reference": "eed7dab206254e1077dd5038b9d173bba1a1b5db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Semantics3/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Semantics3 and contributors",
+                    "homepage": "https://github.com/semantics3/semantics3-php/contributors"
+                }
+            ],
+            "description": "PHP library bindings for the Semantics3 APIs",
+            "homepage": "https://www.semantics3.com/",
+            "keywords": [
+                "api",
+                "products data",
+                "semantics3"
+            ],
+            "time": "2017-07-13T05:28:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "semantics3/semantics3-php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
