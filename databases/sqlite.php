@@ -16,4 +16,6 @@ class SQLiteDB extends SQLite3
 
 ?>
 
+}
+
 
