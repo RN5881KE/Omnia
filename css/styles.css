@@ -1,0 +1,84 @@
+.jumbotron {
+    background-color: black;
+    !important;
+}
+
+.navbar {
+	 
+	 margin-bottom:0;
+     border-radius:0;
+    
+}
+
+h1 {
+    margin: 10px;
+}
+
+.subtitle {
+    color:white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: "smcp", "zero";
+}
+
+li {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: "smcp", "zero";
+}
+
+.form-control {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-feature-settings: "smcp", "zero";
+}
+
+.item {
+    position: absolute;
+}
+
+
+.navbar-brand {
+  position: center;
+  width: 200px; 
+  width="auto" height="auto" 
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+.{
+    
+}
+
+
+.{
+    
+}
+
+
+.{
+    
+}
+
+
+.{
+    
+}
+
+
+.{
+    
+}
+
+
+.{
+    
+}
