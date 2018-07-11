@@ -8,6 +8,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet" >
     <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/api_scripts.js"></script>
@@ -29,7 +30,7 @@
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                <li><a href="#">Categories</a></li> 
+                <li><a href="categories.php">Categories</a></li> 
                 <li role="separator" class="divider"></li>    
                 <li><a href="#">Popular Deals</a></li>
                 <li><a href="#">Local Deals</a></li>
@@ -53,7 +54,7 @@
                  <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbspAccount<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                <li><a href="#">Login</a></li>
+                <li><a href="login.php"><img src = "../images/login.png" /a></li>
                 <li><a href="#">Create Account</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Support</a></li>
