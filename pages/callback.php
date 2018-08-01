@@ -15,8 +15,8 @@
 	$oAuth = new Google_Service_Oauth2($client);
 	$user = $oAuth->userinfo->get();
 
-	echo "<pre>";   // for testing
-	print_r($user);exit; //Checking results first for testing
+	//echo "<pre>";   // for testing
+	//print_r($user);exit; //Checking results first for testing
 
 	$userData['name'] = $user->name;
 	$userData['email'] = $user->email;
@@ -29,6 +29,6 @@
 
 	$_SESSION['user'] = $userData;
 
-	header("location: userInfo.php");
+	header("location: userinfo.php");
 	
 ?>
