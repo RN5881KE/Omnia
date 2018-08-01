@@ -3,6 +3,8 @@
 	session_start();
 	print_r($_SESSION['user']);
 
+	include_once 'User.php';
+
 
 ?>
 

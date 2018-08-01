@@ -1,5 +1,7 @@
 <?php
 	require_once('config.php');
+	require_once('User.php');
+	
 
 	if(isset($_SESSION['accessToken'])){
 		$client->setAccessToken($_SESSION['accessToken']);

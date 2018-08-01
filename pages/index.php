@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    print_r($_SESSION['user']);
+    $_SESSION['userData'] = $userData;
+
+    include_once 'User.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
