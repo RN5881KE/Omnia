@@ -1,12 +1,15 @@
 <?php
-
 	session_start();
 	print_r($_SESSION['user']);
 
-	include_once 'User.php';
-
-
 ?>
+
+<?php
+if(!isset($_SESSION['user'])){ 
+    header("Location: index.php");
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -103,12 +106,12 @@
 				<div class="profile-usermenu">
 					<ul class="nav">
 						<li class="active">
-							<a href="#">
+							<a href="userinfo.php">
 							<i class="glyphicon glyphicon-home"></i>
 							Overview </a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="accountsettings.php">
 							<i class="glyphicon glyphicon-user"></i>
 							Account Settings </a>
 						</li>

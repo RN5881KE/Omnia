@@ -1,6 +1,6 @@
-<? php
-	session_start();
-	session_destroy();
+<?php
+session_start();
+unset($_SESSION['user']);
 ?>
 <html>
     <head>
@@ -10,13 +10,3 @@
         <h1>Redirecting in 3 seconds...</h1>
     </body>
 </html>
-
-
-<?php
-include_once 'config.php';
-unset($_SESSION['token']);
-unset($_SESSION['userData']);
-$gClient->revokeToken();
-session_destroy();
-header("Location:index.php");
-?>

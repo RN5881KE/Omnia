@@ -2,9 +2,8 @@
 
     session_start();
     print_r($_SESSION['user']);
-    $_SESSION['userData'] = $userData;
 
-    include_once 'User.php';
+    
 
 
 ?>
@@ -62,10 +61,26 @@
               </ul>
             </li>
                  <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>&nbsp&nbspAccount<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span><?php 
+            if(!isset($_SESSION['user']) || empty($_SESSION['user'])) {
+                echo '&nbspSign In';
+                } 
+                else {
+                        echo '&nbspMy Account';
+                }
+                    ?><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                 <li><a href="login.php"><img src = "../images/login.png" /a></li>
-                <li><a href="#">Create Account</a></li>
+                <li><a href="userinfo.php">  <?php 
+                if(!isset($_SESSION['user']) || empty($_SESSION['user'])) {
+                echo 'Not signed in (guest)';
+                } 
+                else {
+                        echo $_SESSION['user']['name'].'s Account' ;
+                }
+                    ?>
+    
+</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Support</a></li>
               </ul>
@@ -80,7 +95,17 @@
     <h1>
         <img src="../images/Omnia.PNG"/>
     </h1>
-    <p class="subtitle">Finding the best software and techology deals.  </p>
+    <p class="subtitle">
+        <?php 
+            if(!isset($_SESSION['user']) || empty($_SESSION['user'])) {
+                echo 'Welcome Guest.';
+                } 
+                else {
+                        echo 'Welcome ' . $_SESSION['user']['name'];
+                }
+?>
+    
+</p>
     <form class="form-inline">
         <div class="input-group">
             <input type="search" class="form-control" size="50" placeholder="Search Products..." required>

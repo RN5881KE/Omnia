@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-	require_once('User.php');
+	
 	
 
 	if(isset($_SESSION['accessToken'])){
@@ -25,12 +25,14 @@
 	$userData['gender'] = $user->gender;
 	$userData['pageLink'] = $user->link;
 	$userData['picture'] = $user->picture;
-
-
-	
+	$userdata['givenName'] = $user->givenName;
 
 	$_SESSION['user'] = $userData;
+
+
+
 
 	header("location: userinfo.php");
 	
 ?>
+
